@@ -117,6 +117,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start */
     max-width: 400px;
     margin: 0 auto;
 }
@@ -131,6 +132,10 @@ input, textarea {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+textarea {
+    height: 120px; /* Increased height to make it four times larger */
 }
 
 button {
