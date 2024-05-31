@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -17,8 +18,14 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Display Node.js version
+        run: node --version
+
       - name: Install dependencies
         run: npm install
+
+      - name: Display installed packages
+        run: npm list
 
       - name: Build project
         run: npm run build
@@ -28,3 +35,7 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          scope: your-vercel-scope
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
