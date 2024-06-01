@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
+    <!-- Sets the viewport to make the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
+    <!-- The title of the web page -->
     <title>Contact</title>
 </head>
+
 <body>
+    <!-- Navigation bar -->
     <div class="navbar">
+        <!-- Logo container -->
         <div class="logo">
+            <!-- Logo image -->
             <img src="rb_logo.png" alt="Logo">
         </div>
+        <!-- Navigation links -->
         <ul class="nav-links">
+            <!-- List item with link to the home page -->
             <li><a href="index.html">Home</a></li>
+            <!-- List item with link to the about page -->
             <li><a href="about.html">About Me</a></li>
+            <!-- List item with link to the projects page -->
             <li><a href="projects.html">Projects</a></li>
+            <!-- List item with link to the services page -->
             <li><a href="services.html">Services</a></li>
+            <!-- List item with link to the contact page -->
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
+    
+    <!-- Main content of the page -->
     <main>
+        <!-- Main heading of the page -->
         <h1>Contact Me</h1>
+        <!-- Contact form -->
         <form id="contact-form">
+            <!-- Label and input for name -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
+            <!-- Label and input for email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
+            <!-- Label and textarea for message -->
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="10" cols="50" required></textarea>
             
+            <!-- Submit button for the form -->
             <button type="submit">Submit</button>
         </form>
     </main>
+    
+    <!-- Link to the external JavaScript file -->
     <script src="scripts.js"></script>
 </body>
+
 </html>

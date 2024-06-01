@@ -1,74 +1,87 @@
 /* styles.css */
 
+/* Basic styling for the body */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #d3d3d3; /* Light grey background for the entire page */
 }
 
+/* Styling for the navigation bar */
 .navbar {
     background-color: #d3d3d3; /* Light grey background for the navbar */
     overflow: hidden;
     padding: 10px 0; /* Add some padding to the navbar */
     display: flex;
     align-items: flex-end; /* Align items to the bottom */
-    justify-content: space-between;
+    justify-content: space-between; /* Space between logo and nav links */
 }
 
+/* Styling for the logo container within the navbar */
 .navbar .logo {
     margin: 5px;
 }
 
+/* Styling for the logo image */
 .navbar .logo img {
-    height: 160px;
+    height: 160px; /* Fixed height for the logo */
 }
 
+/* Styling for the navigation links */
 .nav-links {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list styling */
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox for the links as well */
 }
 
+/* Styling for each navigation link item */
 .nav-links li {
     margin-left: 10px; /* Add some space between the links */
 }
 
+/* Styling for the navigation link anchors */
 .nav-links li a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
 }
 
+/* Hover effect for navigation link anchors */
 .nav-links li a:hover {
-    background-color: #bbb;
-    color: black;
+    background-color: #bbb; /* Change background color on hover */
+    color: black; /* Change text color on hover */
 }
 
+/* Main content styling */
 main {
     padding: 20px;
     background-color: #e9e5d9dd; /* Off-white background for main content */
 }
 
+/* Heading styling */
 h1 {
     text-align: center;
     margin-bottom: 40px;
 }
 
+/* Form styling */
 form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arrange form elements vertically */
     align-items: flex-start;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the form horizontally */
 }
 
+/* Label styling */
 label {
     margin-bottom: 5px;
 }
 
+/* Input and textarea styling */
 input, textarea {
     width: 100%;
     margin-bottom: 15px;
@@ -78,99 +91,120 @@ input, textarea {
     border-radius: 4px;
 }
 
+/* Additional styling for textarea */
 textarea {
     height: 120px;
 }
 
+/* Button styling */
 button {
     padding: 10px;
     font-size: 16px;
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Dark background for the button */
+    color: white; /* White text for the button */
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Hover effect for button */
 button:hover {
-    background-color: #555;
+    background-color: #555; /* Slightly lighter background on hover */
 }
 
 /* About Page Specific Styles */
+
+/* Container for the about section content */
 .about-content {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Space between photo and text */
 }
 
+/* Styling for the about photo */
 .about-photo {
     max-width: 150px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular photo */
 }
 
+/* Styling for the about text */
 .about-text {
     max-width: 600px;
 }
 
 /* Projects Page Specific Styles */
+
+/* Styling for odd numbered projects */
 .project:nth-child(odd) {
     background-color: #fdfdfd; /* Off-white background for odd projects */
 }
 
+/* Styling for even numbered projects */
 .project:nth-child(even) {
     background-color: #d3d3d3; /* Light grey background for even projects */
 }
 
+/* Container for individual project sections */
 .project {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Space between photo and text */
     margin-bottom: 40px;
     padding: 20px; /* Add padding for better spacing */
     border-radius: 10px;
 }
 
+/* Styling for the project photos */
 .project-photo {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
 }
 
+/* Styling for the project text */
 .project-text {
     max-width: 600px;
 }
 
+/* Styling for project headings */
 .project h2 {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin */
 }
 
 /* Services Page Specific Styles */
+
+/* Container for the services section */
 .services {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 20px; /* Space between photo and list */
 }
 
+/* Styling for the services photo */
 .services-photo {
     max-width: 300px;
     height: auto;
     border-radius: 10px;
 }
 
+/* Container for the services list */
 .services-list {
     max-width: 600px;
 }
 
+/* Styling for the services list heading */
 .services-list h2 {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin */
 }
 
+/* Styling for the services list */
 .services-list ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: disc; /* Disc bullets for the list */
+    padding-left: 20px; /* Space between bullet and text */
 }
 
+/* Styling for individual service items */
 .services-list li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space between list items */
 }
