@@ -1,3 +1,11 @@
+/*
+    script.html
+    Robert Baglow
+    301349269
+    Spring 2024
+    Section: 401
+    31/05/2024
+*/
 // Wait for the DOM to be fully loaded before executing the script
 document.addEventListener("DOMContentLoaded", function() {
     // Get the contact form element by its ID
